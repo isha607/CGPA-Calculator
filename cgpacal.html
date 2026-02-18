@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CGPA Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="cgpa.css">
+</head>
+<body>
+
+<!-- Theme Toggle -->
+<button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span>
+</button>
+
+
+<div class="container">
+
+    <div class="header">
+        <h2>CGPA Calculator</h2>
+    </div>
+
+    <div id="subjects">
+        <div class="row">
+            <input type="text" placeholder="Subject Name">
+            <select class="grade">
+    <option value="" disabled selected hidden>Grade</option>
+    <option value="O">O</option>
+    <option value="A+">A+</option>
+    <option value="A">A</option>
+    <option value="B+">B+</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+</select>
+
+
+
+            <input type="number" placeholder="Credits" min="1">
+            <button class="delete-btn" onclick="deleteRow(this)">Del</button>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="addSubject()">Add Subject</button>
+        <button onclick="calculateCGPA()">Calculate CGPA</button>
+        <button onclick="resetFields()">Reset</button>
+    </div>
+
+    <div class="result">
+        Your CGPA is: <span id="cgpa">0.00</span>
+        <br>
+        <span id="percentage"></span>
+    </div>
+
+</div>
+
+<script src="cgpa.js"></script>
+</body>
+</html>
+
+
+
+

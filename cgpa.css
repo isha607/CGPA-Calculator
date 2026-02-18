@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #102B53, #4E7AB1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: 0.4s ease;
+    color: white;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    width: 600px;
+    max-width: 95%;
+    padding: 40px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    transition: 0.4s ease;
+}
+
+/* ================= HEADER ================= */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+}
+
+/* ================= STUDENT INFO ================= */
+.student-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* ================= INPUT ROW ================= */
+.row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 70px;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* ================= INPUT ================= */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #7D9FC0;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.8);
+}
+
+input:focus {
+    background: #50698D;
+}
+
+/* ================= SELECT ================= */
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #7D9FC0;
+    color: rgba(255,255,255,0.85);
+    font-size: 14px;
+    outline: none;
+    appearance: none;
+    transition: 0.3s;
+}
+
+select:valid {
+    color: white;
+}
+
+/* ================= BUTTONS ================= */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Button Styles */
+.add-btn { 
+    background: #4E7AB1; 
+    color: white; 
+}
+
+.calc-btn { 
+    background: #CEB5D4; 
+    color: #102B53; 
+    font-weight: 600; 
+}
+
+.reset-btn { 
+    background: #7D9FC0; 
+    color: #102B53; 
+}
+
+.export-btn { 
+    background: white; 
+    color: #102B53; 
+}
+
+.delete-btn {
+    width: 60px;
+    background: #e37578;
+    color: #102B53;
+    margin-top: 0;
+}
+
+/* ================= RESULT ================= */
+.result {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ================= FLOATING THEME BUTTON ================= */
+.theme-toggle {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* ========================================================= */
+/* ======================= LIGHT MODE ====================== */
+/* ========================================================= */
+
+body.light {
+   background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+/* Container */
+body.light .container {
+   background: #aed6e6;
+background: linear-gradient(90deg, rgba(174, 214, 230, 1) 0%, rgba(172, 230, 196, 1) 50%, rgba(230, 223, 163, 1) 100%);
+    color: #001D39;
+    box-shadow: 0 25px 60px rgba(0, 29, 57, 0.15);
+}
+
+/* Header */
+body.light .header h2 {
+    color: #001D39;
+}
+
+/* Inputs */
+body.light input {
+    background: #6EA2B3;
+    color: white;
+}
+
+body.light input::placeholder {
+    color: rgba(255,255,255,0.8);
+}
+
+body.light input:focus {
+    background: #4E8EA2;
+}
+
+/* Select */
+body.light select {
+    background: #6EA2B3;
+    color: rgba(255,255,255,0.85);
+}
+
+body.light select:valid {
+    color: white;
+}
+
+/* Buttons */
+body.light .add-btn {
+    background: linear-gradient(145deg, #0A4174, #49769F);
+    color: white;
+}
+
+body.light .calc-btn {
+    background: linear-gradient(145deg, #4E8EA2, #7BBDE8);
+    color: #001D39;
+}
+
+body.light .reset-btn {
+    background: #6EA2B3;
+    color: #001D39;
+}
+
+body.light .export-btn {
+    background: white;
+    color: #001D39;
+}
+
+body.light .delete-btn {
+    background: #e37578;
+    color: white;
+}
+
+/* Result */
+body.light .result {
+    color: #001D39;
+}
+
+/* Theme Toggle */
+body.light .theme-toggle {
+    background: rgba(0, 29, 57, 0.1);
+    color: #001D39;
+}
+
+
+
+
+
