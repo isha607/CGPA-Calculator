@@ -42,7 +42,3 @@ Each grade is mapped to a specific point:
 - CSS3 (with gradient & theme styling)
 - JavaScript (DOM Manipulation)
 
----
-
-## 📂 Project Structure
-
